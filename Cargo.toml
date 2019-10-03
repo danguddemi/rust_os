@@ -4,12 +4,5 @@ version = "0.1.0"
 authors = ["Daniel Guddemi <danguddemi@gmail.com>"]
 edition = "2018"
 
-// panic on abort to disable stack unwinding (an OS specific task)
-
-[profile.dev]
-panic = "abort"
-
-[profile.release]
-panic = "abort"
-
 [dependencies]
+bootloader = "0.8.0"
